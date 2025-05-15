@@ -1,9 +1,11 @@
+import { Outlet } from "react-router";
+import Navbar from "./components/shared/Navbar";
 
-const App = () => {
-  return (
-    <div>
-      App
-    </div>
-  )
+export default function App() {
+	return (
+		<>
+			<Navbar />
+			<Outlet />
+		</>
+	);
 }
-export default App
